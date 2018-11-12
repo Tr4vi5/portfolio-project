@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-project",
+  "version": "1.0.0",
+  "description": "Responsive portfolio page",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tr4vi5/portfolio-project.git"
+  },
+  "author": "Travis Dunn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tr4vi5/portfolio-project/issues"
+  },
+  "homepage": "https://github.com/Tr4vi5/portfolio-project#readme",
+  "dependencies": {
+    "node-sass": "^4.10.0"
+  }
+}
