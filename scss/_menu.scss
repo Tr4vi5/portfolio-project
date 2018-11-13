@@ -22,7 +22,8 @@
         .btn-line {
             // rotate line one
             &:nth-child(1) {
-                transform: rotate(45deg) translate(5px, 5px)
+                transform: rotate(45deg) translate(5px, 5px);
+                background-color: $tertiary-color;
             }
             // hide line two
             &:nth-child(2) {
@@ -30,7 +31,8 @@
             }
             // rotate line three
             &:nth-child(3) {
-                transform: rotate(-45deg) translate(7px, -6px)
+                transform: rotate(-45deg) translate(7px, -6px);
+                background-color: $tertiary-color;
             }
         }
     }
