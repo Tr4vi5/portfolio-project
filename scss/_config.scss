@@ -1,6 +1,5 @@
 $primary-color: #444;
-$secondary-color: #FFF;
-$tertiary-color: rgb(255, 174, 0);
+$secondary-color: rgb(255, 174, 0);
 $show-home-image: true;
 $home-image: url('/dist/img/background.jpg');
 $portrait-image: url('/dist/img/portrait.png');
@@ -28,6 +27,15 @@ $background-opacity: 0.7;
                 z-index: -1;
             }
         }
+    }
+}
+
+// Set Text Color
+@function set-text-color($color){
+    @if (lightness($color) > 40){
+        @return #000;
+    } @else {
+        @return #FFF;
     }
 }
 

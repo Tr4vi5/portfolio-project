@@ -11,7 +11,7 @@
         width: 28px;
         height: 3px;
         margin: 0 0 5px 0;
-        background-color: $secondary-color;
+        background-color: set-text-color($primary-color);;
         @include easeOut;
     }
 
@@ -23,7 +23,7 @@
             // rotate line one
             &:nth-child(1) {
                 transform: rotate(45deg) translate(5px, 5px);
-                background-color: $tertiary-color;
+                background-color: $secondary-color;
             }
             // hide line two
             &:nth-child(2) {
@@ -32,7 +32,7 @@
             // rotate line three
             &:nth-child(3) {
                 transform: rotate(-45deg) translate(7px, -6px);
-                background-color: $tertiary-color;
+                background-color: $secondary-color;
             }
         }
     }
@@ -89,7 +89,7 @@
             height: 250px;
             background: $portrait-image;
             border-radius: 50%;
-            border: solid 3px $tertiary-color;
+            border: solid 3px $secondary-color;
         }
     }
 
@@ -102,7 +102,7 @@
             transform: translate3d(0,0,0);
         }
         &.current > a{
-            color: $tertiary-color;
+            color: $secondary-color;
         }
     }
 
@@ -113,11 +113,11 @@
         text-transform: capitalize;
         padding: 1rem 0;
         font-weight: 300;
-        color: $secondary-color;
+        color: set-text-color($primary-color);;
         text-decoration: none;
         @include easeOut;
         &:hover {
-            color: $tertiary-color;
+            color: $secondary-color;
         }
     }
 }
